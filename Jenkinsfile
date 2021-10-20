@@ -5,10 +5,6 @@ pipeline {
     nodejs 'NodeJS'
       dockerTool 'docker'
     } 
-    environment {
-        CI = 'true'
-    }
-  
     stages {
         stage('checkout') {
             steps { 
